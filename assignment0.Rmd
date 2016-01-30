@@ -1,8 +1,12 @@
 ---
-title: "Assignment 1 - SRT411"
+title: "Assignment0 - SRT411"
 author: "Thomas Reid Zuk"
-date: "2016-01-28"
-output: html_document
+date: '2016-01-28'
+output: 
+  md_document:
+    variant:  markdown_github
+
+  
 ---
 
 
@@ -39,9 +43,18 @@ plot(rnorm(100))
 help (sqrt)
 ```
 
+Exert from sqrt Help:
+
+Description
+
+abs(x) computes the absolute value of x, sqrt(x) computes the (principal) square root of x, square root of {x}
+
+
 #### TODO #6
 ```{r}
-source("firstScript.R")
+for(i in 1:4){
+  source("src/firstScript.R")
+}
 ```
 
 #### TODO #7
@@ -54,13 +67,13 @@ Q
 
 #### TODO #8
 ```{r}
-source("secondScript.R")
+source("src/secondScript.R")
 ```
 
 
 #### TODO #9
 ```{r}
-source("secondScriptV2.R")
+source("src/secondScriptV2.R")
 ```
 
 + rgb is a function that sets colour based on RGB values and transparency based on alpha 
@@ -72,12 +85,13 @@ source("secondScriptV2.R")
 + cex number value that specifies the magnification (size) or elements like text or symbols
 
 
+
 #### TODO #10
 ```{r}
-data = read.table(file="tst1.txt", header=TRUE)
+data = read.table(file="src/tst1.txt", header=TRUE)
 newData = data$g*5
-write.table(newData, file="tst2.txt", row.names=FALSE)
-read.table(file="tst2.txt")
+write.table(newData, file="src/tst2.txt", row.names=FALSE)
+read.table(file="src/tst2.txt")
 ```
 
 #### TODO #11
@@ -85,7 +99,7 @@ read.table(file="tst2.txt")
 vec = c(rnorm(100))
 mean(sqrt(vec))
 ```
--- NaN's produced because the square root of a negative integer is an imaginary number,which for the purpose of this demonstration and simplicity does not exist.
++ NaN's produced because the square root of a negative integer is an imaginary number,which for the purpose of this demonstration and simplicity does not exist.
 
 
 #### TODO #12
@@ -130,6 +144,7 @@ func1(vec14a)
 
 
 #### TODO #15/Footnote challenge
++ The following code displays the time it takes to execute a vector computation versus the time it takes a for-loop to perform the same work
 ```{r}
 vect1 = c(-2,-3,-1,0,1,2,3,5,5,7,10,25,30,50,70,80,99,101,110,150,200)
 
@@ -138,7 +153,16 @@ func2 = function(arg1){
   return(result)
 }
 vect2 = func2(vect1)
-vect2
+```
++ Time take using vector computation, non-loop
+```{r}
+system.time(replicate(10000, func2(vect1)))
+```
++ Time take using for-loop
+```{r}
+vec15a = c(0,1,2,3,5,10,25,30,99,150)
+system.time(replicate(10000, func1(vec15a)))
+
 ```
 
 
@@ -147,10 +171,16 @@ vect2
 
 https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
 
-http://rmarkdown.rstudio.com/
-
 http://kbroman.org/knitr_knutshell/pages/markdown.html
 
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
 http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/
+
+https://www.rstudio.com/
+
+https://cran.r-project.org/
+
+https://github.com/swirldev/swirl
+
+http://stackoverflow.com/questions/tagged/r
