@@ -211,7 +211,7 @@ system.time(replicate(10000, func2(vect1)))
 ```
 
     ##    user  system elapsed 
-    ##    0.11    0.00    0.11
+    ##    0.12    0.00    0.13
 
 -   Time take using for-loop
 
@@ -221,7 +221,7 @@ system.time(replicate(10000, func1(vec15a)))
 ```
 
     ##    user  system elapsed 
-    ##    0.18    0.00    0.17
+    ##    0.17    0.00    0.17
 
 ### Sources:
 

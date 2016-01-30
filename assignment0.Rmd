@@ -5,8 +5,6 @@ date: '2016-01-28'
 output: 
   md_document:
     variant:  markdown_github
-
-  
 ---
 
 
