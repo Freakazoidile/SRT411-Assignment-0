@@ -2,9 +2,7 @@
 title: "Assignment0 - SRT411"
 author: "Thomas Reid Zuk"
 date: '2016-01-28'
-output: 
-  md_document:
-    variant:  markdown_github
+output: html_document
 ---
 
 
