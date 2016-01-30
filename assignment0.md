@@ -1,3 +1,7 @@
+Assignment 0 for SRT 411. This documents contains solutions to the challenges in the TODO sections of the introduction to R tutorial linked below which is designed to teach the basics of R programming language.
+
+<https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf>
+
 #### TODO \#1
 
 ``` r
@@ -211,7 +215,7 @@ system.time(replicate(10000, func2(vect1)))
 ```
 
     ##    user  system elapsed 
-    ##    0.12    0.00    0.12
+    ##    0.09    0.01    0.11
 
 -   Time take using for-loop
 
@@ -221,7 +225,7 @@ system.time(replicate(10000, func1(vec15a)))
 ```
 
     ##    user  system elapsed 
-    ##    0.17    0.00    0.17
+    ##    0.18    0.00    0.17
 
 ### Sources:
 
