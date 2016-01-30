@@ -3,4 +3,4 @@
 
 ### This repository is not to be cloned with the exception of the instructor of Seneca College course SRT 411, Winter semester 2016 
 
-#### All contents of this repository belong to Thomas Reid Zuk and not to be used redistributed without permission. (Don't cheat/plagarize from this)
+#### All contents of this repository belong to Thomas Reid Zuk and not to be used or redistributed without permission. (Don't cheat/plagarize from this)
